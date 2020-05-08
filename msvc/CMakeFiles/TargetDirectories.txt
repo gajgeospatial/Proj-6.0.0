@@ -1,0 +1,14 @@
+C:/Development/op3d_active/proj-6.0.0/msvc/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/CMakeFiles/ALL_BUILD.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/CMakeFiles/ZERO_CHECK.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/data/CMakeFiles/generate_all_sql_in.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/data/CMakeFiles/generate_proj_db.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/data/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/include/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/include/proj/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/src/CMakeFiles/proj.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/src/CMakeFiles/binprojinfo.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/src/CMakeFiles/binproj.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/src/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/man/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/proj-6.0.0/msvc/cmake/CMakeFiles/INSTALL.dir

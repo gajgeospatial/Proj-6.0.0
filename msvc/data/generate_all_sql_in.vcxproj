@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B002FAD2-8C9C-3647-8697-75E7AE1A3E91}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>generate_all_sql_in</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\proj-6.0.0\msvc\CMakeFiles\a840652d48bf8e979aabc78fa7d731ac\all.sql.in.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating all.sql.in</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd ..\..\data
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DALL_SQL_IN=C:/Development/op3d_active/proj-6.0.0/msvc/data/all.sql.in -P ..\..\data\generate_all_sql_in.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\CMakeFiles\a840652d48bf8e979aabc78fa7d731ac\all.sql.in.rule;..\..\data\sql\begin.sql;..\..\data\sql\proj_db_table_defs.sql;..\..\data\sql\conversion_triggers.sql;..\..\data\sql\metadata.sql;..\..\data\sql\unit_of_measure.sql;..\..\data\sql\area.sql;..\..\data\sql\coordinate_system.sql;..\..\data\sql\axis.sql;..\..\data\sql\ellipsoid.sql;..\..\data\sql\prime_meridian.sql;..\..\data\sql\geodetic_datum.sql;..\..\data\sql\vertical_datum.sql;..\..\data\sql\conversion.sql;..\..\data\sql\geodetic_crs.sql;..\..\data\sql\projected_crs.sql;..\..\data\sql\vertical_crs.sql;..\..\data\sql\compound_crs.sql;..\..\data\sql\helmert_transformation.sql;..\..\data\sql\grid_transformation.sql;..\..\data\sql\grid_transformation_custom.sql;..\..\data\sql\other_transformation.sql;..\..\data\sql\concatenated_operation.sql;..\..\data\sql\alias_name.sql;..\..\data\sql\supersession.sql;..\..\data\sql\deprecation.sql;..\..\data\sql\esri.sql;..\..\data\sql\ignf.sql;..\..\data\sql\grid_alternatives.sql;..\..\data\sql\grid_alternatives_generated.sql;..\..\data\sql\customizations.sql;..\..\data\sql\commit.sql;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\all.sql.in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating all.sql.in</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd ..\..\data
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DALL_SQL_IN=C:/Development/op3d_active/proj-6.0.0/msvc/data/all.sql.in -P ..\..\data\generate_all_sql_in.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\CMakeFiles\a840652d48bf8e979aabc78fa7d731ac\all.sql.in.rule;..\..\data\sql\begin.sql;..\..\data\sql\proj_db_table_defs.sql;..\..\data\sql\conversion_triggers.sql;..\..\data\sql\metadata.sql;..\..\data\sql\unit_of_measure.sql;..\..\data\sql\area.sql;..\..\data\sql\coordinate_system.sql;..\..\data\sql\axis.sql;..\..\data\sql\ellipsoid.sql;..\..\data\sql\prime_meridian.sql;..\..\data\sql\geodetic_datum.sql;..\..\data\sql\vertical_datum.sql;..\..\data\sql\conversion.sql;..\..\data\sql\geodetic_crs.sql;..\..\data\sql\projected_crs.sql;..\..\data\sql\vertical_crs.sql;..\..\data\sql\compound_crs.sql;..\..\data\sql\helmert_transformation.sql;..\..\data\sql\grid_transformation.sql;..\..\data\sql\grid_transformation_custom.sql;..\..\data\sql\other_transformation.sql;..\..\data\sql\concatenated_operation.sql;..\..\data\sql\alias_name.sql;..\..\data\sql\supersession.sql;..\..\data\sql\deprecation.sql;..\..\data\sql\esri.sql;..\..\data\sql\ignf.sql;..\..\data\sql\grid_alternatives.sql;..\..\data\sql\grid_alternatives_generated.sql;..\..\data\sql\customizations.sql;..\..\data\sql\commit.sql;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\all.sql.in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating all.sql.in</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd ..\..\data
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DALL_SQL_IN=C:/Development/op3d_active/proj-6.0.0/msvc/data/all.sql.in -P ..\..\data\generate_all_sql_in.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\CMakeFiles\a840652d48bf8e979aabc78fa7d731ac\all.sql.in.rule;..\..\data\sql\begin.sql;..\..\data\sql\proj_db_table_defs.sql;..\..\data\sql\conversion_triggers.sql;..\..\data\sql\metadata.sql;..\..\data\sql\unit_of_measure.sql;..\..\data\sql\area.sql;..\..\data\sql\coordinate_system.sql;..\..\data\sql\axis.sql;..\..\data\sql\ellipsoid.sql;..\..\data\sql\prime_meridian.sql;..\..\data\sql\geodetic_datum.sql;..\..\data\sql\vertical_datum.sql;..\..\data\sql\conversion.sql;..\..\data\sql\geodetic_crs.sql;..\..\data\sql\projected_crs.sql;..\..\data\sql\vertical_crs.sql;..\..\data\sql\compound_crs.sql;..\..\data\sql\helmert_transformation.sql;..\..\data\sql\grid_transformation.sql;..\..\data\sql\grid_transformation_custom.sql;..\..\data\sql\other_transformation.sql;..\..\data\sql\concatenated_operation.sql;..\..\data\sql\alias_name.sql;..\..\data\sql\supersession.sql;..\..\data\sql\deprecation.sql;..\..\data\sql\esri.sql;..\..\data\sql\ignf.sql;..\..\data\sql\grid_alternatives.sql;..\..\data\sql\grid_alternatives_generated.sql;..\..\data\sql\customizations.sql;..\..\data\sql\commit.sql;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.\all.sql.in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating all.sql.in</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd ..\..\data
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DALL_SQL_IN=C:/Development/op3d_active/proj-6.0.0/msvc/data/all.sql.in -P ..\..\data\generate_all_sql_in.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\CMakeFiles\a840652d48bf8e979aabc78fa7d731ac\all.sql.in.rule;..\..\data\sql\begin.sql;..\..\data\sql\proj_db_table_defs.sql;..\..\data\sql\conversion_triggers.sql;..\..\data\sql\metadata.sql;..\..\data\sql\unit_of_measure.sql;..\..\data\sql\area.sql;..\..\data\sql\coordinate_system.sql;..\..\data\sql\axis.sql;..\..\data\sql\ellipsoid.sql;..\..\data\sql\prime_meridian.sql;..\..\data\sql\geodetic_datum.sql;..\..\data\sql\vertical_datum.sql;..\..\data\sql\conversion.sql;..\..\data\sql\geodetic_crs.sql;..\..\data\sql\projected_crs.sql;..\..\data\sql\vertical_crs.sql;..\..\data\sql\compound_crs.sql;..\..\data\sql\helmert_transformation.sql;..\..\data\sql\grid_transformation.sql;..\..\data\sql\grid_transformation_custom.sql;..\..\data\sql\other_transformation.sql;..\..\data\sql\concatenated_operation.sql;..\..\data\sql\alias_name.sql;..\..\data\sql\supersession.sql;..\..\data\sql\deprecation.sql;..\..\data\sql\esri.sql;..\..\data\sql\ignf.sql;..\..\data\sql\grid_alternatives.sql;..\..\data\sql\grid_alternatives_generated.sql;..\..\data\sql\customizations.sql;..\..\data\sql\commit.sql;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.\all.sql.in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\proj-6.0.0\msvc\CMakeFiles\9d8bd1de72a51d2c04ae3e4000491509\generate_all_sql_in.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\CMakeFiles\9d8bd1de72a51d2c04ae3e4000491509\generate_all_sql_in.rule;.\all.sql.in;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\CMakeFiles\generate_all_sql_in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\CMakeFiles\9d8bd1de72a51d2c04ae3e4000491509\generate_all_sql_in.rule;.\all.sql.in;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\CMakeFiles\generate_all_sql_in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\CMakeFiles\9d8bd1de72a51d2c04ae3e4000491509\generate_all_sql_in.rule;.\all.sql.in;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.\CMakeFiles\generate_all_sql_in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\CMakeFiles\9d8bd1de72a51d2c04ae3e4000491509\generate_all_sql_in.rule;.\all.sql.in;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.\CMakeFiles\generate_all_sql_in</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Development\op3d_active\proj-6.0.0\msvc\data\CMakeFiles\generate_all_sql_in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
