@@ -742,7 +742,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Development\op3d_active\proj-6.0.0\src\apps\projinfo.cpp" />
+    <ClCompile Include="..\..\src\apps\projinfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include=".\proj.vcxproj">

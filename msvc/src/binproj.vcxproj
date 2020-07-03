@@ -742,8 +742,8 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Development\op3d_active\proj-6.0.0\src\apps\proj.cpp" />
-    <ClCompile Include="C:\Development\op3d_active\proj-6.0.0\src\apps\emess.cpp" />
+    <ClCompile Include="..\..\src\apps\proj.cpp" />
+    <ClCompile Include="..\..\src\apps\emess.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include=".\proj.vcxproj">
