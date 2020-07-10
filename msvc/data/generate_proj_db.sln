@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "generate_proj_db", "generate_proj_db.vcxproj", "{0135FCC8-C020-3672-A101-C56A9A3E180E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		vs2017_Debug|x64 = vs2017_Debug|x64
+		vs2017_Debug|x86 = vs2017_Debug|x86
+		vs2017_Release|x64 = vs2017_Release|x64
+		vs2017_Release|x86 = vs2017_Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Debug|x64.ActiveCfg = Debug|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Debug|x64.Build.0 = Debug|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Debug|x86.ActiveCfg = Debug|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Debug|x86.Build.0 = Debug|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Release|x64.ActiveCfg = Release|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Release|x64.Build.0 = Release|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Release|x86.ActiveCfg = Release|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.Release|x86.Build.0 = Release|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Debug|x64.ActiveCfg = vs2017_Debug|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Debug|x64.Build.0 = vs2017_Debug|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Debug|x86.ActiveCfg = vs2017_Debug|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Debug|x86.Build.0 = vs2017_Debug|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Release|x64.ActiveCfg = vs2017_Release|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Release|x64.Build.0 = vs2017_Release|x64
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Release|x86.ActiveCfg = vs2017_Release|Win32
+		{0135FCC8-C020-3672-A101-C56A9A3E180E}.vs2017_Release|x86.Build.0 = vs2017_Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {881A5C03-B43D-4573-8EDD-DB58A1567EDA}
+	EndGlobalSection
+EndGlobal
